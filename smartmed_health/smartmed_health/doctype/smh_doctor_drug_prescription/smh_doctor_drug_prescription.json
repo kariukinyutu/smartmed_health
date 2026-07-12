@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-08 13:16:57.470550",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_of_visit",
+  "patient_name",
+  "column_break_vu8iu",
+  "age",
+  "gender",
+  "section_break_pbzkh",
+  "drugs"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient Name",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Gender"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age"
+  },
+  {
+   "fieldname": "date_of_visit",
+   "fieldtype": "Data",
+   "label": "Date of Visit"
+  },
+  {
+   "fieldname": "drugs",
+   "fieldtype": "Table",
+   "label": "Drugs",
+   "options": "SMH Drug Prescription"
+  },
+  {
+   "fieldname": "column_break_vu8iu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pbzkh",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-08 13:27:16.072822",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "SMH Doctor Drug Prescription",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

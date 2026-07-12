@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SMH-MP.####",
+ "creation": "2024-10-28 15:32:55.465986",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "procedurename",
+  "procedure_rate",
+  "comment"
+ ],
+ "fields": [
+  {
+   "fieldname": "procedure_rate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comment"
+  },
+  {
+   "fieldname": "procedurename",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Procedure Name",
+   "options": "Clinical Procedure Template"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-11 17:34:13.378951",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "SMH Medical Procedures Requests",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

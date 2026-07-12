@@ -1,0 +1,293 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_import": 1,
+ "autoname": "TRI.####",
+ "creation": "2024-10-16 12:34:38.744402",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "patient_visit",
+  "title",
+  "patient",
+  "patient_sex",
+  "patient_name",
+  "appointment",
+  "encounter",
+  "column_break_2",
+  "company",
+  "signs_date",
+  "signs_time",
+  "sb_vs",
+  "bp_systolic",
+  "bp_diastolic",
+  "pulse",
+  "temperature",
+  "column_break_8",
+  "respiratory_rate",
+  "spo2",
+  "weight",
+  "height",
+  "bmi",
+  "medical_practitioner",
+  "doctor",
+  "note_to_doctor",
+  "patient_age"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "HLC-VTS-.YYYY.-"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 5,
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "SMH No.",
+   "options": "Patient",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appointment",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "label": "Patient Appointment",
+   "options": "Patient Appointment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "encounter",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "label": "Patient Encounter",
+   "options": "Patient Encounter",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "Today",
+   "fieldname": "signs_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "signs_time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "sb_vs",
+   "fieldtype": "Section Break",
+   "label": "Vital Signs"
+  },
+  {
+   "description": "Presence of a fever (temp &gt; 38.5 \u00b0C/101.3 \u00b0F or sustained temp &gt; 38 \u00b0C/100.4 \u00b0F)",
+   "fieldname": "temperature",
+   "fieldtype": "Data",
+   "ignore_xss_filter": 1,
+   "in_list_view": 1,
+   "label": "Body Temperature"
+  },
+  {
+   "description": "Adults' pulse rate is anywhere between 50 and 80 beats per minute.",
+   "fieldname": "pulse",
+   "fieldtype": "Data",
+   "ignore_xss_filter": 1,
+   "in_list_view": 1,
+   "label": "Heart Rate / Pulse"
+  },
+  {
+   "description": "Normal reference range for an adult is 16\u201320 breaths/minute (RCP 2012)",
+   "fieldname": "respiratory_rate",
+   "fieldtype": "Data",
+   "ignore_xss_filter": 1,
+   "in_list_view": 1,
+   "label": "Respiratory rate"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bp_systolic",
+   "fieldtype": "Data",
+   "ignore_xss_filter": 1,
+   "label": "Blood Pressure (systolic)"
+  },
+  {
+   "fieldname": "bp_diastolic",
+   "fieldtype": "Data",
+   "ignore_xss_filter": 1,
+   "label": "Blood Pressure (diastolic)"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Height (In Meter)"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight (In Kilogram)"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "bmi",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "BMI",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_visit",
+   "fieldtype": "Link",
+   "label": "Patient Visit",
+   "options": "SMH Patient Visit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "spo2",
+   "fieldtype": "Data",
+   "label": "SPO2"
+  },
+  {
+   "fieldname": "note_to_doctor",
+   "fieldtype": "Data",
+   "label": "Note to Doctor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "medical_practitioner",
+   "fieldtype": "Link",
+   "label": "Select Doctor",
+   "options": "Healthcare Practitioner",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "medical_practitioner.practitioner_name",
+   "fieldname": "doctor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Doctor"
+  },
+  {
+   "fetch_from": "patient_visit.patient_full_name",
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient Names",
+   "options": "SMH Patient Visit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_sex",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "patient_age",
+   "fieldtype": "Data",
+   "label": "Age "
+  }
+ ],
+ "links": [],
+ "modified": "2025-06-09 20:41:42.985986",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "SMH Vital Signs",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Physician",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nursing User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Smart Nurses",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Healthcare",
+ "search_fields": "patient, signs_date",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Triaged"
+  },
+  {
+   "color": "Orange",
+   "title": "Consulting"
+  }
+ ],
+ "title_field": "patient_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

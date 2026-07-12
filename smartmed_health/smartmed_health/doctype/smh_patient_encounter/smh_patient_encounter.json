@@ -1,0 +1,352 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ENC.####",
+ "creation": "2024-10-30 04:10:00.043724",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_visit",
+  "patient",
+  "patient_name",
+  "patient_age",
+  "patient_sex",
+  "column_break_mmgu0",
+  "medical_practitioner",
+  "doctor",
+  "encounter_date",
+  "encounter_time",
+  "section_break_3kd7g",
+  "previous_visits",
+  "smh_patient_encounter_history",
+  "previous_history",
+  "last_three_visits",
+  "doctors_notes_tab",
+  "smhvt_signs",
+  "smh_diagnosis",
+  "doctors_notes",
+  "column_break_i33p9",
+  "smh_diagnosis3",
+  "plan_of_management",
+  "review_date",
+  "tests_tab",
+  "lab_tests",
+  "imaging",
+  "section_break_z9o3u",
+  "imaging_diagnostics",
+  "full_name",
+  "smh_procedures",
+  "drmedprocedures",
+  "service_requests_tab",
+  "prescription_table",
+  "other_services",
+  "referral",
+  "sick_off",
+  "medical_report",
+  "services_section",
+  "amended_from",
+  "total_visits"
+ ],
+ "fields": [
+  {
+   "columns": 6,
+   "fieldname": "patient_visit",
+   "fieldtype": "Link",
+   "label": "Patient Visit",
+   "options": "SMH Patient Visit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mmgu0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medical_practitioner",
+   "fieldtype": "Link",
+   "label": "Medical Practioner",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "encounter_date",
+   "fieldtype": "Date",
+   "label": "Encounter Date",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "encounter_time",
+   "fieldtype": "Time",
+   "hidden": 1,
+   "label": "Encounter Time"
+  },
+  {
+   "fieldname": "section_break_3kd7g",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "doctors_notes_tab",
+   "fieldtype": "Tab Break",
+   "label": "Doctors Notes"
+  },
+  {
+   "fieldname": "doctors_notes",
+   "fieldtype": "Small Text",
+   "label": "Doctors Notes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "smh_diagnosis",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Diagnosis"
+  },
+  {
+   "fieldname": "column_break_i33p9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan_of_management",
+   "fieldtype": "Small Text",
+   "label": "Plan of Management"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SMH Patient Encounter",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "service_requests_tab",
+   "fieldtype": "Tab Break",
+   "label": "Prescriptions"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SMH Patient Encounter",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "previous_visits",
+   "fieldtype": "Tab Break",
+   "label": "Previous Visits"
+  },
+  {
+   "fieldname": "tests_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lab Tests"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "services_section",
+   "fieldtype": "Section Break",
+   "label": "Services"
+  },
+  {
+   "fieldname": "referral",
+   "fieldtype": "Button",
+   "label": "Referral"
+  },
+  {
+   "fieldname": "sick_off",
+   "fieldtype": "Button",
+   "label": "Sick Off"
+  },
+  {
+   "fieldname": "imaging_diagnostics",
+   "fieldtype": "Table",
+   "label": "Imaging Diagnostics",
+   "options": "SMH Imaging Prescription"
+  },
+  {
+   "fieldname": "medical_report",
+   "fieldtype": "Button",
+   "label": "Medical Report"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_z9o3u",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prescription_table",
+   "fieldtype": "Table",
+   "label": "Prescription",
+   "options": "SMH Drug Prescription"
+  },
+  {
+   "fieldname": "lab_tests",
+   "fieldtype": "Table",
+   "label": "Lab Test",
+   "options": "SMH Lab Request Table"
+  },
+  {
+   "fieldname": "previous_history",
+   "fieldtype": "HTML",
+   "label": "Previous History"
+  },
+  {
+   "fetch_from": "patient_name.patient_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "patient_name.dob",
+   "fieldname": "patient_age",
+   "fieldtype": "Data",
+   "label": "Patient Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "imaging",
+   "fieldtype": "Tab Break",
+   "label": "Imaging"
+  },
+  {
+   "fieldname": "smh_procedures",
+   "fieldtype": "Tab Break",
+   "label": "SMH Procedures"
+  },
+  {
+   "fieldname": "drmedprocedures",
+   "fieldtype": "Table",
+   "label": "SMH Medical Procedure",
+   "options": "SMH MedProcedures"
+  },
+  {
+   "fieldname": "smhvt_signs",
+   "fieldtype": "HTML",
+   "label": "Vital Signs"
+  },
+  {
+   "fetch_from": "medical_practitioner.practitioner_name",
+   "fieldname": "doctor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Doctor"
+  },
+  {
+   "fieldname": "smh_patient_encounter_history",
+   "fieldtype": "Table",
+   "label": "Encounter History",
+   "options": "SMH Patient Encounter History"
+  },
+  {
+   "fieldname": "smh_diagnosis3",
+   "fieldtype": "Table MultiSelect",
+   "label": "Diagnosis",
+   "options": "Patient Encounter Diagnosis"
+  },
+  {
+   "fieldname": "other_services",
+   "fieldtype": "Tab Break",
+   "label": "Referrals"
+  },
+  {
+   "fetch_from": "patient_name.sex",
+   "fieldname": "patient_sex",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "SMH No.",
+   "options": "Patient"
+  },
+  {
+   "fetch_from": "patient.first_name",
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "review_date",
+   "fieldtype": "Date",
+   "label": "Review Date"
+  },
+  {
+   "fieldname": "total_visits",
+   "fieldtype": "HTML",
+   "label": "Total Visit"
+  },
+  {
+   "fieldname": "last_three_visits",
+   "fieldtype": "HTML",
+   "label": "Last 3 Visits"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-07 08:23:23.449820",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "SMH Patient Encounter",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Smart Doctors",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Smart Nurses",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "patient_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

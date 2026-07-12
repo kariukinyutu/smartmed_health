@@ -1,0 +1,34 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"BWPsCqwFeD\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Smart Audiology</span>\",\"col\":12}},{\"id\":\"uc-QA6Fxsp\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Audiology Patient \",\"col\":12}}]",
+ "creation": "2024-10-24 09:46:19.238957",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "insert-above",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Audio Metry",
+ "links": [],
+ "modified": "2024-12-18 08:42:22.244054",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "Audio Metry",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Smart Medical Health",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "SMH Patient Visit",
+   "label": "Audiology Patient ",
+   "quick_list_filter": "[[\"SMH Patient Visit\",\"creation\",\"Timespan\",\"today\",false],[\"SMH Patient Visit\",\"purpose_of_visit\",\"=\",\"Audiology\",false]]"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 11.0,
+ "shortcuts": [],
+ "title": "Audio Metry"
+}

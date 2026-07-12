@@ -1,0 +1,92 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"_qnfSS6EQl\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Smart Nurses</span>\",\"col\":12}},{\"id\":\"lBZzWellW-\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Triage Que\",\"col\":4}},{\"id\":\"FHC7ENAU7y\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Completed Nursing Procedures\",\"col\":4}},{\"id\":\"h9iV-x5RNJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Nursing Tasks\",\"col\":4}},{\"id\":\"uUjNhQ2xUj\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Smart Med Patient Visit\",\"col\":4}},{\"id\":\"I15u9jiPAY\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Requested Procedures\",\"col\":4}},{\"id\":\"jTKWRMfWhq\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "creation": "2024-05-02 05:09:59.205979",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "image",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Smart Nurses",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Nursing Tasks",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Patient Visits",
+   "link_count": 0,
+   "link_to": "SMH Patient Visit",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Triage Patient",
+   "link_count": 0,
+   "link_to": "SMH Vital Signs",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Clinical Procedure",
+   "link_count": 0,
+   "link_to": "Clinical Procedure",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-03-20 14:23:12.742537",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "Smart Nurses",
+ "number_cards": [
+  {
+   "label": "Triage Que",
+   "number_card_name": "Patients Waiting"
+  },
+  {
+   "label": "Completed Nursing Procedures",
+   "number_card_name": "Nurisng Tasks"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "Smart Medical Health",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "SMH Patient Visit",
+   "label": "Smart Med Patient Visit",
+   "quick_list_filter": "[[\"SMH Patient Visit\",\"creation\",\"Timespan\",\"today\",false],[\"SMH Patient Visit\",\"triage\",\"=\",\"Send to Triage\",false]]"
+  },
+  {
+   "document_type": "SMH Medical Procedure Doctors Request",
+   "label": "Requested Procedures",
+   "quick_list_filter": "[]"
+  }
+ ],
+ "roles": [
+  {
+   "role": "Smart Nurses"
+  }
+ ],
+ "sequence_id": 3.0,
+ "shortcuts": [],
+ "title": "Smart Nurses"
+}

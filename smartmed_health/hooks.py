@@ -1,9 +1,25 @@
 app_name = "smartmed_health"
 app_title = "Smartmed Health"
-app_publisher = "ITeers Technologies"
-app_description = "Custom Health App For Smart Med Hub"
+app_publisher = "Iteerstechnologies"
+app_description = "SmartMed Health App"
 app_email = "iteerstechnologies@gmail.com"
-app_license = "MIT"
+app_license = "mit"
+
+# Apps
+# ------------------
+
+# required_apps = []
+
+# Each item in the list will be shown as an app in the apps page
+# add_to_apps_screen = [
+# 	{
+# 		"name": "smartmed_health",
+# 		"logo": "/assets/smartmed_health/logo.png",
+# 		"title": "Smartmed Health",
+# 		"route": "/smartmed_health",
+# 		"has_permission": "smartmed_health.api.permission.has_app_permission"
+# 	}
+# ]
 
 # Includes in <head>
 # ------------------
@@ -31,6 +47,11 @@ app_license = "MIT"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+
+# Svg Icons
+# ------------------
+# include app icons in desk
+# app_include_icons = "smartmed_health/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -213,3 +234,16 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"smartmed_health.auth.validate"
 # ]
+
+# Automatically update python controller files with type annotations for this app.
+# export_python_type_annotations = True
+
+# default_log_clearing_doctypes = {
+# 	"Logging DocType Name": 30  # days to retain logs
+# }
+
+# Translation
+# ------------
+# List of apps whose translatable strings should be excluded from this app's translations.
+# ignore_translatable_strings_from = []
+

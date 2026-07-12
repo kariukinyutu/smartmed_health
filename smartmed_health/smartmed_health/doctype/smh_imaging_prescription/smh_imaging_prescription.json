@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-28 15:34:45.444861",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "imaging",
+  "amount",
+  "comment"
+ ],
+ "fields": [
+  {
+   "fetch_from": "imaging.rate",
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Amount",
+   "read_only": 1,
+   "width": "2"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comment"
+  },
+  {
+   "fieldname": "imaging",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Imaging",
+   "options": "Smh Diagnostic Imaging Procedure Template"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-11 13:14:49.314534",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "SMH Imaging Prescription",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

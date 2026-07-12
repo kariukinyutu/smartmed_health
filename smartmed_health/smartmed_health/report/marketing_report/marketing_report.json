@@ -1,0 +1,23 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-11-23 11:41:12.684424",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "modified": "2024-11-23 11:41:12.684424",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "Marketing Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Marketing Visit Form",
+ "report_name": "Marketing Report",
+ "report_type": "Report Builder",
+ "roles": []
+}

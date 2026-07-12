@@ -1,0 +1,28 @@
+{
+ "content": null,
+ "creation": "2024-09-26 14:03:55.291707",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-09-26 14:03:55.291707",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "smhnursing",
+ "owner": "Administrator",
+ "page_name": "smhnursing",
+ "roles": [
+  {
+   "role": "Smart Admin"
+  },
+  {
+   "role": "Smart Doctors"
+  },
+  {
+   "role": "Smart Nurses"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

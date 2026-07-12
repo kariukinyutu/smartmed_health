@@ -1,0 +1,22 @@
+{
+ "content": null,
+ "creation": "2024-09-23 11:15:23.766141",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-09-23 11:15:23.766141",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "smh-doctors",
+ "owner": "Administrator",
+ "page_name": "smh-doctors",
+ "roles": [
+  {
+   "role": "Smart Doctors"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

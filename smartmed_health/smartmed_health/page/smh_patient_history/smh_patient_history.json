@@ -1,0 +1,28 @@
+{
+ "content": null,
+ "creation": "2024-11-07 18:43:52.755022",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "",
+ "idx": 0,
+ "modified": "2024-11-07 18:43:52.755022",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "smh_patient_history",
+ "owner": "Administrator",
+ "page_name": "smh_patient_history",
+ "restrict_to_domain": "Healthcare",
+ "roles": [
+  {
+   "role": "Healthcare Administrator"
+  },
+  {
+   "role": "Physician"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "SMH Patient History"
+}

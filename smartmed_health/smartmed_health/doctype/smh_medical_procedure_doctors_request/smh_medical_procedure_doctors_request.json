@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:patient_name",
+ "creation": "2024-11-11 15:49:55.370502",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_encounter_no",
+  "patient_name",
+  "patient_age",
+  "gender",
+  "column_break_qbilt",
+  "requested_by",
+  "request_date",
+  "request_time",
+  "section_break_otuwa",
+  "requested_procedure",
+  "medical_practioner",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_encounter_no",
+   "fieldtype": "Link",
+   "label": "Patient Encounter No",
+   "options": "SMH Patient Encounter",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Link",
+   "label": "Patient Name",
+   "options": "Patient",
+   "unique": 1
+  },
+  {
+   "fetch_from": "patient_name.dob",
+   "fieldname": "patient_age",
+   "fieldtype": "Data",
+   "label": "Patient Age"
+  },
+  {
+   "fetch_from": "patient_name.sex",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qbilt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "medical_practioner.practitioner_name",
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "request_time",
+   "fieldtype": "Time",
+   "label": "Request Time"
+  },
+  {
+   "fieldname": "section_break_otuwa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "medical_practioner",
+   "fieldtype": "Link",
+   "label": "Medical Practioner",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SMH Medical Procedure Doctors Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "requested_procedure",
+   "fieldtype": "Table",
+   "label": "Medical Procedure",
+   "options": "SMH Medical Procedures Requests"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-27 11:08:31.451331",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "SMH Medical Procedure Doctors Request",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Smart Front Office",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Smart Doctors",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Smart Nurses",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "patient_name"
+}

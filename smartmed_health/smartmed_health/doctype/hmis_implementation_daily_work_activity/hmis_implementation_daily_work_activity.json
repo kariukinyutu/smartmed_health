@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DWA-{####}-{DD}-{MM}-{YYYY}",
+ "creation": "2025-02-20 17:48:25.083210",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_name",
+  "activity_description",
+  "completion_time",
+  "amended_from",
+  "activity_screenshot",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Activity Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "activity_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Actvity Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "completion_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Completed On",
+   "options": "Now",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "HMIS Implementation Daily Work Activity",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "activity_screenshot",
+   "fieldtype": "Attach Image",
+   "label": "Screen Shot"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-02-20 18:00:58.826283",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "HMIS Implementation Daily Work Activity",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "activity_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "activity_name"
+}

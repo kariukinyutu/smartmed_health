@@ -1,0 +1,129 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"nNbK3vBD6Q\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Smart Doctors</span>\",\"col\":12}},{\"id\":\"K7xFynYDbE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Today's Visits\",\"col\":3}},{\"id\":\"svRdiR-786\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Dr Fauzia\",\"col\":3}},{\"id\":\"ADOnDBTxYB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Dr Mahmud\",\"col\":3}},{\"id\":\"uruzEG7-hj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Dr Mugo\",\"col\":3}},{\"id\":\"czxU15Xqgq\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Dr Morris Que\",\"col\":3}},{\"id\":\"caEp-iE6_H\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Dr. Saran's Que\",\"col\":3}},{\"id\":\"jV01VCS56R\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Dr Monica Waiting List\",\"col\":3}},{\"id\":\"iTWnKOJuTo\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Dr Rukia's Que\",\"col\":3}},{\"id\":\"9n6uMClpUJ\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing Consultation\",\"col\":12}},{\"id\":\"BW4yB0cNcD\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Qued Patient\",\"col\":12}},{\"id\":\"vjgS03bsNT\",\"type\":\"card\",\"data\":{\"card_name\":\"Internal Services\",\"col\":3}}]",
+ "creation": "2024-04-30 12:13:56.441986",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "heart-active",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Smart Doctors",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Internal Services",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lab Tests",
+   "link_count": 0,
+   "link_to": "Lab Test",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Imaging Procedure",
+   "link_count": 0,
+   "link_to": "Smh Diagnostic Imaging Procedure",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Nursing Procedure",
+   "link_count": 0,
+   "link_to": "Nursing Task",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "SMH Patient Encounters",
+   "link_count": 0,
+   "link_to": "SMH Patient Encounter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-04-24 08:49:22.435659",
+ "modified_by": "accounts@iteers.co.ke",
+ "module": "Smartmed Health",
+ "name": "Smart Doctors",
+ "number_cards": [
+  {
+   "label": "Dr Mahmud",
+   "number_card_name": "DR Mahmud"
+  },
+  {
+   "label": "Dr. Saran's Que",
+   "number_card_name": "Dr Saran Que"
+  },
+  {
+   "label": "Dr Rukia's Que",
+   "number_card_name": "DR Rukia's Que"
+  },
+  {
+   "label": "Dr Morris Que",
+   "number_card_name": "DR MORRIS"
+  },
+  {
+   "label": "Dr Fauzia",
+   "number_card_name": "Dr. Fauzia"
+  },
+  {
+   "label": "Dr Monica Waiting List",
+   "number_card_name": "DR Monique SMH Patient Encounter"
+  },
+  {
+   "label": "Dr Mugo",
+   "number_card_name": "DR Morris Que"
+  },
+  {
+   "label": "Today's Visits",
+   "number_card_name": "Today's Patient Visit"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "Smart Medical Health",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "SMH Vital Signs",
+   "label": "Qued Patient",
+   "quick_list_filter": "[[\"SMH Vital Signs\",\"creation\",\"Timespan\",\"today\",false]]"
+  },
+  {
+   "document_type": "SMH Patient Encounter",
+   "label": "Ongoing Consultation",
+   "quick_list_filter": "[[\"SMH Patient Encounter\",\"docstatus\",\"=\",\"0\",false]]"
+  }
+ ],
+ "roles": [
+  {
+   "role": "Smart Doctors"
+  },
+  {
+   "role": "Smart Med MD"
+  }
+ ],
+ "sequence_id": 4.0,
+ "shortcuts": [],
+ "title": "Smart Doctors"
+}

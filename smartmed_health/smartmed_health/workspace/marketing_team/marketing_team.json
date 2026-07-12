@@ -1,0 +1,72 @@
+{
+ "charts": [
+  {
+   "chart_name": "Top Customers",
+   "label": "Customers"
+  }
+ ],
+ "content": "[{\"id\":\"dHe4KZOHXn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Marketing Team</span>\",\"col\":12}},{\"id\":\"PmjFeEeZva\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Customers\",\"col\":12}},{\"id\":\"U7GEt7jBUg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Newsletters\",\"col\":3}},{\"id\":\"H4xrOhEljI\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Signed-up Insurance Companies\",\"col\":3}},{\"id\":\"JBCOitvSKO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Marketing Visits\",\"col\":3}},{\"id\":\"uvNTgmDg0r\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item Price List\",\"col\":3}}]",
+ "creation": "2024-10-03 05:24:23.401076",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "expand-alt",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Marketing Team",
+ "links": [],
+ "modified": "2024-12-17 18:34:57.765961",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "Marketing Team",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Smart Medical Health",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Smart Marketers"
+  },
+  {
+   "role": "Smart Admin"
+  }
+ ],
+ "sequence_id": 10.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Newsletters",
+   "link_to": "Newsletter",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Signed-up Insurance Companies",
+   "link_to": "Insurance Companies",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Marketing Visits",
+   "link_to": "Marketing Visit Form",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Item Price List",
+   "link_to": "Item Prices",
+   "type": "Report"
+  }
+ ],
+ "title": "Marketing Team"
+}

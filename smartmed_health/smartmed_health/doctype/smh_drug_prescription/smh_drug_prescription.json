@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-30 12:43:54.302195",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "generic_name",
+  "drugitem",
+  "prescription_dosage",
+  "prescription_duration",
+  "dr_comment"
+ ],
+ "fields": [
+  {
+   "fieldname": "drugitem",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Brand",
+   "options": "Item"
+  },
+  {
+   "fieldname": "generic_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medication/Dosage",
+   "options": "SMH Medication Generic Names"
+  },
+  {
+   "fieldname": "dr_comment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dr. Comment"
+  },
+  {
+   "fieldname": "prescription_duration",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Duration"
+  },
+  {
+   "fieldname": "prescription_dosage",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Intervals",
+   "options": "SMH Dosage Frequency"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-27 15:35:38.565910",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "SMH Drug Prescription",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

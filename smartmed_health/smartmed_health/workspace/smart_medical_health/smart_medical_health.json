@@ -1,0 +1,65 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"MiYX6m4PV4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Smart Medical Health</span>\",\"col\":12}},{\"id\":\"d18s904xZf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Patients\",\"col\":3}}]",
+ "creation": "2024-12-16 07:04:21.696824",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "healthcare",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Smart Medical Health",
+ "links": [],
+ "modified": "2025-03-20 14:15:52.450875",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "Smart Medical Health",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Smart Admin"
+  },
+  {
+   "role": "Smart Audiologist"
+  },
+  {
+   "role": "Smart Doctors"
+  },
+  {
+   "role": "Smart Employee"
+  },
+  {
+   "role": "Smart Front Office"
+  },
+  {
+   "role": "Smart Pharma"
+  },
+  {
+   "role": "Smart Labs"
+  },
+  {
+   "role": "Smart Marketers"
+  },
+  {
+   "role": "Smart Nurses"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Patients",
+   "link_to": "Patient",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Smart Medical Health"
+}

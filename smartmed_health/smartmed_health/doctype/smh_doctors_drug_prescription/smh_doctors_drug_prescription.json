@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PRES.####",
+ "creation": "2024-11-11 07:46:25.153109",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_encounter_no",
+  "patient",
+  "patient_name",
+  "patient_age",
+  "patient_sex",
+  "prescription_status",
+  "column_break_qbilt",
+  "requested_by",
+  "request_date",
+  "request_time",
+  "section_break_otuwa",
+  "prescribed_meds",
+  "medical_practioner",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_encounter_no",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Patient Encounter No",
+   "options": "SMH Patient Encounter",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "patient.patient_name",
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "patient_name.dob",
+   "fieldname": "patient_age",
+   "fieldtype": "Data",
+   "label": "Patient Age"
+  },
+  {
+   "fieldname": "column_break_qbilt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "medical_practioner.practitioner_name",
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "request_time",
+   "fieldtype": "Time",
+   "label": "Request Time"
+  },
+  {
+   "fieldname": "section_break_otuwa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "medical_practioner",
+   "fieldtype": "Link",
+   "label": "Medical Practioner",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SMH Doctors Drug Prescription",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "prescribed_meds",
+   "fieldtype": "Table",
+   "label": "Prescriptions",
+   "options": "SMH Drug Prescription"
+  },
+  {
+   "fieldname": "prescription_status",
+   "fieldtype": "Select",
+   "label": "Prescription Status",
+   "options": "Pending Payments\nDispensed"
+  },
+  {
+   "fetch_from": "patient_name.sex",
+   "fieldname": "patient_sex",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient Name",
+   "options": "Patient",
+   "reqd": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-02-19 15:54:14.680905",
+ "modified_by": "Administrator",
+ "module": "Smartmed Health",
+ "name": "SMH Doctors Drug Prescription",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Smart Doctors",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Smart Pharma",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Smart Front Office",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Yellow",
+   "title": "Prescription Requested"
+  },
+  {
+   "color": "Orange",
+   "title": "Billed"
+  },
+  {
+   "color": "Light Blue",
+   "title": "Payment Received"
+  },
+  {
+   "color": "Green",
+   "title": "Dispensed"
+  },
+  {
+   "color": "Red",
+   "title": "Cancelled"
+  }
+ ],
+ "title_field": "patient_name",
+ "track_changes": 1,
+ "track_seen": 1
+}
